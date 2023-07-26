@@ -7,6 +7,31 @@
     <title>Proyecto 1 Desarrollo Web</title>
 </head>
 <body>
-    
+    <div class="container">
+        <section class="section">
+            <h1>Esta es la Primera Pagina</h1>
+            <p>para poder navegar atravez de las distintas paginas utiliza la barra de navegacion puesta en la parte superior de esta pagina
+                o utiliza el boton que esta en la parte de abajo.
+            </p>
+            <dialog id="dialog" class="dialog">
+                <button id="close" value="cancel"> salir</button>
+            </dialog>
+            <button id="showModal" class="buttonShow"> Abrir modal de navegacion </button>
+        </section>
+    </div>
+    <script>
+        const dialog = document.querySelector('#dialog');
+        const showModal = document.querySelector('#showModal');
+        const closeModal = document.querySelector('#close');
+
+        showModal.addEventListener('click', (e) => {
+            dialog.showModal();
+        });
+
+        dialog.addEventListener('click', (e) => {
+            dialog.close();
+        });
+
+    </script>
 </body>
 </html>
