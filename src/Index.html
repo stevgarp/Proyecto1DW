@@ -7,17 +7,39 @@
     <title>Proyecto 1 Desarrollo Web</title>
 </head>
 <body>
+    <nav>
+        <div class="desktop">
+            <div class="logo">Steven Garcia</div>
+            <div class="primary">
+                <a href="pagina1.html">Pagina 1</a>
+                <a href="pagina2.html">Pagina 2</a>
+                <a href="pagina3.html">Pagina 3</a>
+                <a href="pagina4.html">Pagina 4</a>
+            </div>
+            <div class="secondary full">
+                <a href="Index.html">Principal</a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
-        <section class="section">
-            <h1>Esta es la Primera Pagina</h1>
-            <p>para poder navegar atravez de las distintas paginas utiliza la barra de navegacion puesta en la parte superior de esta pagina
-                o utiliza el boton que esta en la parte de abajo.
-            </p>
-            <dialog id="dialog" class="dialog">
-                <button id="close" value="cancel"> salir</button>
-            </dialog>
-            <button id="showModal" class="buttonShow"> Abrir modal de navegacion </button>
-        </section>
+        <div class="card">
+            <section class="section">
+                <h1>Esta es la Primera Pagina</h1>
+                <p>para poder navegar atravez de las distintas paginas utiliza la barra de navegacion puesta en la parte superior de esta pagina
+                    o utiliza el boton que esta en la parte de abajo.
+                </p>
+                <dialog id="dialog" class="dialog">
+                    <ul>
+                        <li><a href="pagina1.html">Pagina 1</a></li>
+                        <li><a href="pagina2.html">Pagina 2</a></li>
+                        <li><a href="pagina3.html">Pagina 3</a></li>
+                        <li><a href="pagina4.html">Pagina 4</a></li>
+                    </ul>
+                    <button id="close" value="cancel"> salir</button>
+                </dialog>
+                <button id="showModal" class="buttonShow"> Abrir modal de navegacion </button>
+            </section>
+        </div>
     </div>
     <script>
         const dialog = document.querySelector('#dialog');
